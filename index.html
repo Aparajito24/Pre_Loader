@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pre-Loader</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="preloader">
+		<div class="counter">0</div>
+	</div>
+	<section>
+		<h2>Welcome Back<span> Stay Motivated.</span></h2>
+		<p>Of all the grand romantic gestures in the world, there’s nothing that makes an everlasting declaration of love quite like the writing of a poem. Love poems can be sweet as chocolates on Valentine’s Day, cheesy as the worst pickup lines, sentimental as a handwritten note, and wistful as a bouquet of long-stemmed red roses. If you’re in a relationship, reading a love poem can bring to mind the happiest memories of times with your special someone. If you’re single, love poems can fill you with an optimism and hopefulness of finding a person who makes your heart beat just as quickly as the words on the page. These love poems will be sure to make your heart quicken, make you smile, and even melt your cold heart if you’re feeling cynical about love these days. So pour yourself a glass of wine, and enjoy the heartfelt words that these poets meticulously put to page in these love poems.
+		</p>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	<script type="text/javascript">
+		function counter(){
+			var count = setInterval(function(){
+				var c = parseInt($('.counter').text());
+				$('.counter').text((++c).toString());
+				if (c == 100) {
+					clearInterval(count);
+					$('.counter').addClass('hide')
+					$('.preloader').addClass('active')
+				}
+			},60)
+		}
+		counter()
+	</script>
+</body>
+</html>
