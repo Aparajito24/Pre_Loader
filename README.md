@@ -2,8 +2,7 @@
 # 7
 
 **Simple % Loader**
-
-
+![123598324_4599045470168995_5960225738474830238_n](https://user-images.githubusercontent.com/69636277/98120908-95334f80-1ed4-11eb-9a62-a1970e2dace1.png)
 THANKS FOR VIEWING MY PROJECT.
 
 HAPPY CODING!!
